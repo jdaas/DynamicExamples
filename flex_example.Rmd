@@ -1,0 +1,82 @@
+---
+title: "Example"
+output: 
+  flexdashboard::flex_dashboard:
+    vertical_layout: scroll
+    source_code: embed
+    navbar:
+      - {icon: "fa-github", href: "https://github.com/jdaas/DynamicExamples/"}
+---
+
+Page 1
+========
+
+Column 1 {.sidebar}
+--------
+
+This is the Sidebar
+
+
+Column 2 {.tabset}
+--------
+In this column, there are two tabs.
+
+
+### Chart one
+
+This is the first chart:
+
+```{r}
+a <- 1:10
+b <- 10:1
+
+plot (a, b)
+
+```
+
+
+### Chart two
+
+Here is an another chart:
+
+```{r}
+plot (a, -b)
+```
+
+Column 3
+---
+
+Another plot
+
+```{r}
+plot (a * 2, b)
+```
+
+Page 2
+====
+
+You can have multiple pages! Here the plots are in normal charts, without tabset:
+
+Column 1
+-----
+
+### Chart 1
+
+```{r}
+plot (a,b)
+```
+
+### Chart 2
+
+```{r}
+plot (a, -b)
+```
+
+Column 2
+----
+
+### Chart 1
+
+```{r}
+plot (a * 2, b)
+```
