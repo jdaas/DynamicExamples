@@ -1,0 +1,37 @@
+---
+title: "Example"
+author: "Author"
+date: "Date"
+output: html_document
+---
+
+# This is a header
+This is *italic* and **bold** text.
+
+```{r}
+# This is code
+
+a <- 1 + 1
+
+a
+```
+
+You can use inline code: a = `r a`
+
+You can also have [links](https://github.com/jdaas/DynamicExamples/), for example to the source code of this document on GitHub.
+
+## This is a subheader
+
+You can show math $\frac{a}{b}$ inline and as a block
+
+$$ a \rightarrow b $$
+
+```{r, echo = FALSE}
+# This code will be evaluated,
+
+a <- 1:10
+b <- 1:10
+
+plot(x = a, y = b)
+# but only the output will be shown
+```
