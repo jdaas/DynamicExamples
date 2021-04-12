@@ -1,0 +1,9 @@
+name: "Example Website"
+navbar:
+  title: "Example Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Example"
+      href: example.htlm
+output_dir: "docs"
